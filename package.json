@@ -1,0 +1,32 @@
+{
+  "name": "cracks",
+  "version": "0.0.0-semantically-released",
+  "description": "cracks",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel lib/index.js -o index.js",
+    "test": "standard",
+    "prepublish": "npm run build && semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophwitzko/cracks.git"
+  },
+  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christophwitzko/cracks/issues"
+  },
+  "homepage": "https://github.com/christophwitzko/cracks#readme",
+  "devDependencies": {
+    "babel": "^5.2.17",
+    "semantic-release": "^3.2.1",
+    "standard": "^3.7.3"
+  },
+  "standard": {
+    "ignore": [
+      "index.js"
+    ]
+  }
+}
