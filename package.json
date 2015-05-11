@@ -3,6 +3,7 @@
   "version": "0.0.0-semantically-released",
   "description": "cracks",
   "main": "index.js",
+  "bin": "./bin/cli.js",
   "scripts": {
     "clean": "rm -rf dist || true",
     "build": "npm run clean && mkdir dist && babel lib --out-dir dist",
@@ -29,5 +30,8 @@
     "ignore": [
       "dist/**"
     ]
+  },
+  "dependencies": {
+    "minimist": "^1.1.1"
   }
 }
