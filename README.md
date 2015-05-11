@@ -3,7 +3,7 @@
 
 ## Install
 
-    $ npm install cracks
+    $ npm install cracks -D
 
 ## Licence
 
