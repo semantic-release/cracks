@@ -4,7 +4,8 @@
   "description": "cracks",
   "main": "index.js",
   "scripts": {
-    "build": "babel lib/index.js -o index.js",
+    "clean": "rm -rf dist || true",
+    "build": "npm run clean && mkdir dist && babel lib --out-dir dist",
     "test": "standard",
     "prepublish": "npm run build && semantic-release pre",
     "postpublish": "semantic-release post"
@@ -26,7 +27,7 @@
   },
   "standard": {
     "ignore": [
-      "index.js"
+      "dist/**"
     ]
   }
 }
