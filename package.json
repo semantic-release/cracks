@@ -5,8 +5,8 @@
   "main": "index.js",
   "bin": "./bin/cli.js",
   "scripts": {
-    "clean": "rm -rf dist || true",
-    "build": "npm run clean && mkdir dist && babel lib --out-dir dist",
+    "clean": "rm -rf dist || true && mkdir dist",
+    "build": "npm run clean && babel lib --out-dir dist",
     "test": "standard",
     "prepublish": "npm run build && semantic-release pre",
     "postpublish": "semantic-release post"
