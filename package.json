@@ -3,7 +3,7 @@
   "version": "0.0.0-semantically-released",
   "description": "breaking change detection",
   "main": "index.js",
-  "bin": "./bin/cli.js",
+  "bin": "./bin/cracks",
   "scripts": {
     "clean": "rm -rf dist || true && mkdir dist",
     "build": "npm run clean && babel lib --out-dir dist",
