@@ -1,7 +1,7 @@
 {
   "name": "cracks",
   "version": "0.0.0-semantically-released",
-  "description": "cracks",
+  "description": "breaking change detection",
   "main": "index.js",
   "bin": "./bin/cli.js",
   "scripts": {
@@ -15,6 +15,14 @@
     "type": "git",
     "url": "git+https://github.com/christophwitzko/cracks.git"
   },
+  "keywords": [
+    "breaking",
+    "change",
+    "detection",
+    "semver",
+    "semantic-release",
+    "package"
+  ],
   "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
   "license": "MIT",
   "bugs": {
