@@ -32,6 +32,8 @@
     ]
   },
   "dependencies": {
+    "git-refs": "^1.1.2",
+    "lodash": "^3.8.0",
     "minimist": "^1.1.1"
   }
 }
