@@ -31,7 +31,7 @@
   "homepage": "https://github.com/christophwitzko/cracks#readme",
   "devDependencies": {
     "babel": "^5.2.17",
-    "semantic-release": "^3.2.1",
+    "semantic-release": "^3.2.2",
     "standard": "^3.7.3"
   },
   "standard": {
