@@ -1,5 +1,5 @@
 # cracks
-[![Build Status](https://travis-ci.org/christophwitzko/cracks.svg)](https://travis-ci.org/christophwitzko/cracks)
+[![Build Status](https://travis-ci.org/semantic-release/cracks.svg)](https://travis-ci.org/semantic-release/cracks)
 
 ## Install
 
