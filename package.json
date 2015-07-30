@@ -5,8 +5,8 @@
   "main": "index.js",
   "bin": "./bin/cracks",
   "scripts": {
-    "clean": "rm -rf dist || true && mkdir dist",
-    "build": "npm run clean && babel lib --out-dir dist",
+    "prebuild": "rimraf dist && mkdirp dist",
+    "build": "babel lib --out-dir dist",
     "test": "standard",
     "prepublish": "npm run build && semantic-release pre",
     "postpublish": "semantic-release post"
@@ -31,6 +31,8 @@
   "homepage": "https://github.com/christophwitzko/cracks#readme",
   "devDependencies": {
     "babel": "^5.2.17",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.2",
     "semantic-release": "^3.2.2",
     "standard": "^4.2.1"
   },
