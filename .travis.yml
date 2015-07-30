@@ -1,21 +1,15 @@
-language: node_js
-node_js:
-- iojs-v2
 sudo: false
-env:
-  global:
-    secure: IgVqgff2XwsJibl1qP6RuK9xKI1JOSPUp5CIDCOje4mgWAnz8U/h95XF9LOpG6Dcn8fKGuQ+vEb/JmWWIeIup7b2jSZUv16JTdLtItby13Y+tu/cJFjxrNrlmkbaojrWnvsDJs/A2b+fY4mDIlk08/XXT1Jab4HT1ofiSXSgXax6ZzcTpzJ6ccanjYDGGulSFX6gXdbDaNHZk9gJjv6dh+uFDeqcyC6gzQLGpnc0PrFvpvVIMvOu437uX8YftAP8xNPcUxxQHoSx3WUnUkB1FzkH32l5P4xd8eJHpaVS1Zl8SxEw0+xH2+HF48vpVLm5Vm6GIXgsyDkn46O+iEEdd6dYUrFOqW7fDf6CWasU+r3bSG29ZcUlarFF9wXVnAEYNhq5sNq8UNi1kiGkHHNY8zfOBL/ADbyuAH8kQ5vYqD5FBxxA8rBIsJPH3veKFJoaZWR5w6AGz5lr55QkC3w0f7ejQgHHzajU6KHNZAeZB7pQYIuzi83gT5NstiJWI67Fccdfc5zpD5w1JIJDD07KaYrFAUICNtcSdZSUHOdi6PHgLrePY7vRmgUAcJA+3dKu0JGH9NTaOrYM94mUqJFj9lXuoZrvdLcdnVYZHC7bb2lWUbMJ0Evh9m0XvzzDTE7O92UgDeQHa1Hv3vPY0au9rDJY7R92dx3GYcSZ5FjxMOI=
+language: node_js
 cache:
   directories:
-  - node_modules
+    - node_modules
 notifications:
   email: false
-deploy:
-  provider: npm
-  email: npm@christophwitzko.com
-  skip_cleanup: true
-  api_key:
-    secure: XMkgIgeNW/s8JHy7BeQ8faPYomDmDzyzkCHX6Cm+lsIdF2R7T13JieQ7aBfT8wHY44pbNK1hYZtZ9gDAHb1XXa4T+fF9LEHq9/QsieZiVmi7UlFrBMcwS+CntDZbS4UoG6FoU32Z1TIRzAuRvBfOucSJZl/KUBi+6I9gx5yzPrps/kAsYQGjJ+r4yGjHDJ1PlB2ptGA7f+IjUvR8xZJDm3gx0cU220PgqWNrn04LU2DM77udgB/0ImUC0NIMbi+lbI7P4Hk2eT0AeE4+fJz8uZmXDiJog9NqIPIpVDJdpZO4M0kas1c66oFNqtgvokNlwNDTGVqGqHn55Y/ByajbQmMoHayTj0k9l81DVDVEzDoeNtxfHmIkbiEZ+nnuXNRFYSGvMHNiyDkZGPAmvgn+MbXXVfXliwNlcj+QU9fUoNME3ulNUFHPBHAslZRaOLqly5bj+nLn0IJuHixkGeUIWajhYLzlW/ePEC+fxSACYnBuF88T/9beOYI3GIQIZrsetjUaSJYBan5wJNhvMuqv8i1cAOcPDcNvesyg232wSYqg8RULBDcaFz35A5QoosT+kU58kEVGAcv/o3qT1FDUO//oDTjZUb4+nTtFMjbJA9xsoaA/neGRgRA+lLX4bh5rflotqV3uq6DwfGa95rUxsj1fj+p876OmiQgTbSlag+I=
-  on:
-    branch: master
-    repo: christophwitzko/cracks
+node_js:
+  - iojs
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm prune
+after_success:
+  - npm run semantic-release
