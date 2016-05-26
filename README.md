@@ -48,7 +48,7 @@ Passing options:
 
 ```
 Usage:
-  crack <options>
+  cracks <options>
 Options:
   -p, --paths  <paths>  Overwrite checkout paths
   -s, --silent          Suppress 'npm test' output
