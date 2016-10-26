@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/semantic-release/cracks#readme",
   "devDependencies": {
-    "babel": "^5.2.17",
+    "babel": "^6.5.2",
     "mkdirp": "^0.5.1",
     "rimraf": "^2.4.2",
     "semantic-release": "^4.0.0",
-    "standard": "^4.2.1"
+    "standard": "^8.5.0"
   },
   "standard": {
     "ignore": [
@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "git-refs": "^1.1.2",
-    "lodash": "^3.8.0",
+    "lodash": "^4.16.4",
     "minimist": "^1.1.1"
   }
 }
