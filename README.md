@@ -1,4 +1,6 @@
 # cracks
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/semantic-release/cracks.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/semantic-release/cracks.svg)](https://travis-ci.org/semantic-release/cracks)
 
 > This module can automatically detect breaking changes by running the
